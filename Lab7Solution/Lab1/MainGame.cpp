@@ -70,12 +70,12 @@ void MainGame::createScreenQuad()
 
 		// vertex attributes for a quad that fills the half of the screen
 		-1.0f,  1.0f,  0.0f, 1.0f,
-		-1.0f,  0.25f,  0.0f, 0.0f,
-		-0.25f,  0.25f,  1.0f, 0.0f,
+		-1.0f,  0.15f,  0.0f, 0.0f,
+		-0.15f,  0.15f,  1.0f, 0.0f,
 
 		-1.0f,  1.0f,  0.0f, 1.0f,
-		-0.25f,  0.25f,  1.0f, 0.0f,
-		-0.25f,  1.0f,  1.0f, 1.0f
+		-0.15f,  0.15f,  1.0f, 0.0f,
+		-0.15f,  1.0f,  1.0f, 1.0f
 	};
 	// cube VAO
 	glGenVertexArrays(1, &quadVAO);
@@ -117,44 +117,14 @@ void MainGame::processInput()
 		if (evnt.type == SDL_KEYDOWN )
 		{
 			/////////Camera Controls///////////
-			//Move
-			if (keys[SDL_SCANCODE_UP])
-			{
-			}
-			if (keys[SDL_SCANCODE_DOWN])
-			{
-			}
-			if (keys[SDL_SCANCODE_RIGHT])
-			{
-			}
-			if (keys[SDL_SCANCODE_LEFT])
-			{
-			}
 			//Rotate Around
-			if (keys[SDL_SCANCODE_I])
-			{
-
-			}
 			if (keys[SDL_SCANCODE_J])
 			{
 				theta -= cameraRotationSpeed;
 			}
-			if (keys[SDL_SCANCODE_K])
-			{
-				
-			}
 			if (keys[SDL_SCANCODE_L])
 			{
 				theta += cameraRotationSpeed;
-			}
-			//Roll
-			if (keys[SDL_SCANCODE_U])
-			{
-
-			}
-			if (keys[SDL_SCANCODE_O])
-			{
-
 			}
 			//Change camera
 			if (keys[SDL_SCANCODE_C])
@@ -301,13 +271,6 @@ void MainGame::drawMissiles()
 
 void MainGame::fireMissiles(int i)
 {
-	/** CALL THIS FROM processInput()
-	* Set the missle transform to the ship transform ONCE (initial conditions)
-	* Set the missle to active (check it is not already active)
-	* Update the tranform to move the missle along its forward vector(more advanced, use seek to target)
-	* check for asteroid collision
-	* handle asteroid collision
-	*/
 	float deg2rad = GameObject().deg2rad;
 	float rotAngle = 360.0f * deg2rad;
 
@@ -373,7 +336,7 @@ void MainGame::setCameraTarget()
 	{	
 		float distance = glm::distance(shipPos, myCamera.getPos());
 
-		glm::vec3 posRel2Ship = glm::vec3(cameraOffset * sin(theta), -cameraOffset*cos(theta), 0.0f);
+		glm::vec3 posRel2Ship = glm::vec3(cameraOffset * sin(theta),  0.0f, cameraOffset * cos(theta));
 
 		myCamera.setLook(shipPos + (2.0f * forwardTemp));
 		myCamera.setPos(shipPos + posRel2Ship);
@@ -382,7 +345,7 @@ void MainGame::setCameraTarget()
 	case 2:
 	{
 		myCamera.setForward(forwardTemp);
-		myCamera.setPos(shipPos + (forwardTemp * cameraOffset));
+		myCamera.setPos(shipPos + (forwardTemp * cameraOffset/2.0f));
 	}
 		break;
 	case 3:
@@ -407,7 +370,7 @@ void MainGame::setCameraTarget()
 	case 5:
 	{
 		myCamera.setPos(*missiles[missileLaunchNumber - 1].getTM().GetPos() + (forwardTemp * cameraOffset) - (upTemp * cameraOffset / 5.0f));
-		myCamera.setLook(*missiles[missileLaunchNumber - 1].getTM().GetPos());
+		myCamera.setLook(*asteroid[missileLaunchNumber - 1].getTM().GetPos());
 	}
 	break;
 	}
@@ -573,9 +536,9 @@ void MainGame::drawGame()
 
 	unbindFBO();
 
-	//renderFBO();      //Just not rendering
+	renderFBO();      //Just not rendering
 
-	//glEnable(GL_DEPTH_TEST);
+	glEnable(GL_DEPTH_TEST);
 
 	drawAsteroids();
 	drawShip();

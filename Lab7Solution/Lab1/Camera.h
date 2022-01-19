@@ -22,6 +22,10 @@ public:
 	{
 		return this->pos;
 	}
+	glm::vec3 getFwd()
+	{
+		return this->forward;
+	}
 
 	inline glm::mat4 getViewProjection() const
 	{

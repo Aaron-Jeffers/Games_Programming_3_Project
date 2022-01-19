@@ -1,34 +1,13 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Lab2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Audio.cpp
-  Display.cpp
-  GameObject.cpp
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(30,16): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(31,16): warning C4305: 'initializing': truncation from 'double' to 'float'
-  main.cpp
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(30,16): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(31,16): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(136,22): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(138,21): warning C4305: 'initializing': truncation from 'double' to 'float'
   MainGame.cpp
 C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(30,16): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(31,16): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(136,22): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(138,21): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(236,35): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(328,5): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(529,44): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(529,41): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(537,65): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(537,62): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
-  Mesh.cpp
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\Mesh.cpp(62,9): warning C4930: 'Sphere meshSphere(void)': prototyped function not called (was a variable definition intended?)
-  obj_loader.cpp
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\obj_loader.cpp(378,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  SDL__Audio.cpp
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\SDL__Audio.cpp(54,15): warning C4018: '>': signed/unsigned mismatch
-  Shader.cpp
-  SkyBox.cpp
-  Texture.cpp
-  Generating Code...
-  stb_image.c
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(206,35): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(291,5): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(492,44): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(492,41): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(500,65): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(500,62): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
   Lab1.vcxproj -> C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Debug\Lab1.exe
