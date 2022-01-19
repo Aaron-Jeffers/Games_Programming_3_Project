@@ -5,9 +5,15 @@ C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\
 C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(136,22): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(138,21): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(206,35): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(291,5): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(492,44): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(492,41): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(500,65): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
-C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(500,62): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(293,5): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(494,44): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(494,41): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(502,65): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.cpp(502,62): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+  main.cpp
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(30,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\GameObject.h(31,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(136,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Lab1\MainGame.h(138,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Generating Code...
   Lab1.vcxproj -> C:\Users\aaron\Desktop\University\4. Fourth Year\Graphics Programming 3\Project\Lab7Solution\Debug\Lab1.exe

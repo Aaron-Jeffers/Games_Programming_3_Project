@@ -99,7 +99,7 @@ void MainGame::gameLoop()
 		currentCamPos = myCamera.getPos();
 		drawGame();
 		updateDelta();
-		collision(asteroidMesh.getSpherePos(), asteroidMesh.getSphereRadius(), shipMesh.getSpherePos(), shipMesh.getSphereRadius());
+		//collision(asteroidMesh.getSpherePos(), asteroidMesh.getSphereRadius(), shipMesh.getSpherePos(), shipMesh.getSphereRadius());
 		setCameraTarget();
 		//playAudio(backGroundMusic, glm::vec3(0.0f,0.0f,0.0f));
 		//cout << "Delta Time: " << deltaTimeDisplay << deltaTimeString << "\n";
@@ -221,6 +221,7 @@ void MainGame::initModels(GameObject*& asteroid)
 	}
 
 	ship.transformPositions(glm::vec3(0.0, 0.0, -3.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(shipScale, shipScale, shipScale));
+	ship.update(&shipMesh);
 
 	for (int i = 0; i < numberOfMissiles; i++)
 	{
@@ -254,8 +255,9 @@ void MainGame::drawAsteroids()
 
 void MainGame::drawMissiles()
 {
-	toonShader.Bind();
-	linkToon();
+	texture.Bind(0);
+	rimShader.Bind();
+	linkRimLighting();
 
 	for (int i = 0; i < numberOfMissiles; i++)
 	{
@@ -263,7 +265,7 @@ void MainGame::drawMissiles()
 		{
 			missiles[i].draw(&missileMesh);
 			missiles[i].update(&missileMesh);
-			toonShader.Update(missiles[i].getTM(), myCamera);
+			rimShader.Update(missiles[i].getTM(), myCamera);
 			fireMissiles(i);
 		}
 	}
@@ -285,7 +287,7 @@ void MainGame::fireMissiles(int i)
 	glm::vec3 norm = glm::normalize(targetVector);
 	glm::vec3 rot = glm::vec3(rotAngle, rotAngle, rotAngle) * norm;
 
-	missiles[i].transformPositions(missilePosition + targetVelocity, rot, (glm::vec3(*missiles[i].getTM().GetScale())));
+	missiles[i].transformPositions(missilePosition + targetVelocity, rot, (glm::vec3(missileScale,missileScale,missileScale)));
 
 
 	if (collision(missilePosition, 0.2 , asteroidPosition, 0.2))

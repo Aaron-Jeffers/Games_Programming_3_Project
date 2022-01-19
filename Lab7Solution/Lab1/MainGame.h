@@ -135,7 +135,7 @@ private:
 
 	float asteroidScale = 0.05;
 	float shipScale = 0.5;
-	float missileScale = 0.2;
+	float missileScale = 0.1;
 
 	string deltaTimeString = "s";
 	string controls;
